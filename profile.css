@@ -1,0 +1,31 @@
+body{
+    background-color:lightblue;
+    font-family:sans-serif;
+    color:#3c3939;
+  }
+  .outer{
+    width:400px;
+      margin:auto;
+      background:#fff;
+      box-shadow:0 4px 10px 0 rgba(0,0,0,0.5);
+  }
+  .image{
+    position:relative;
+  }
+  .info{
+    color:#4b4fe2;
+    margin-right:16px;
+  }
+  .contact{
+    padding:20px;
+  }
+  .skill-bar{
+    background-color:#bdc9ea;
+    border-radius:16px;
+  }
+  .progress-bar{
+    border-radius:16px;
+    text-align:center;
+    color:#fff;
+    background-color:blue;
+  }
