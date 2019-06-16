@@ -1,0 +1,30 @@
+body{
+    margin:0px;
+  }
+  .small-1,.small-2,.small-3{
+    width:33.33%;
+    display:inline-block;
+  }
+  .small-1{
+    background-color:#23eae6;
+  }
+  .small-2{
+    background-color:pink;
+  }
+  .small-3{
+    background-color:#ca3e47;
+   
+  }
+  @media(min-width)and(max-width){
+    .small-1,.small-2,.small-3{
+      width:50%;
+    }
+    .small-3{
+      width:100%;
+    }
+  }
+  @media(max-width:500px){
+    .small-1,.small-2,.small-3{
+      width:100%;
+    } 
+  }
