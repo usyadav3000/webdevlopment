@@ -1,0 +1,60 @@
+.box{
+    display:block; /*for mobile*/
+    width:900px;
+    margin:0 auto;/*900px ke bad stress nahi hoga*/
+}
+body{
+    margin:0;
+}
+
+.small-1,.small-2,.small-3,.small-4,.small-5{
+    width:100%;
+    height:100px;
+}
+.small-1{
+    background-color:#23eae6;
+  }
+  .small-2{
+    background-color:pink;
+  }
+  .small-3{
+    background-color:#ca3e47;
+   
+  }
+  .small-4{
+      background-color: red;
+  }
+  .small-5{
+      background-color: blue;
+  }
+  @media(min-width:600px){
+     .box{
+      display:flex;
+      flex-wrap:wrap;
+     }
+    .small-1{
+        width:100%;
+    }  
+    .small-2,.small-3,.small-4,.small-5{
+        width:50%;
+    }
+  }
+
+  @media(min-width:800px)and(max-width:1024px){
+    
+   .small-1{
+       width:60%;
+   }  
+   .small-2{
+       width:50%;
+   }
+   .small-3,.small-4,.small-5{
+       width:33.33%;
+   }
+ }
+ @media(min-width:900px){
+     .box{
+         width:1000px;  /* last state jaha tk stress hoga*/
+         margin: 0 auto;
+     }
+ }
