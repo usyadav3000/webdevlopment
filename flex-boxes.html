@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <style >
+      .container{
+  display:flex;
+  flex-wrap:nowrap; <!--if we use flex-shrink than use nowrap-->
+  flex-direction:row;
+  background-color:lightblue;
+  height:340px;
+  <!--justify-content:flex-start;-->
+  
+
+ 
+}
+.item{
+  margin:20px;
+  padding:10px;
+  height:30px;
+  width:30px;
+  background-color:red;
+}
+#a1{
+  order:0;
+  flex-grow:1;
+}
+#a3{
+  order:-1;
+  flex-grow:5;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class='container'>
+      <div class='item' id='a1'>a</div>
+      <div class='item' id='a2'>b</div>
+      <div class='item' id='a3'>c</div>
+      <div class='item' id='a4'>d</div>
+      <div class='item' id='a5'>f</div>
+    </div>
+  </body>
+</html>
