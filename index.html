@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <script>
+      var n1,n2,r;
+function add(){
+  n1=document.myform.n1.value;
+  n2=document.myform.n2.value;
+  n1=parseFloat(n1);
+  n2=parseFloat(n2);
+  r=n1+n2;
+  document.myform.result.value=r;
+}
+function sub(){
+  n1=document.myform.n1.value;
+  n2=document.myform.n2.value;
+  n1=parseFloat(n1);
+  n2=parseFloat(n2);
+  r=n1-n2;
+  document.myform.result.value=r;
+  
+}
+function mult(){
+  n1=document.myform.n1.value;
+  n2=document.myform.n2.value;
+  n1=parseFloat(n1);
+  n2=parseFloat(n2);
+  r=n1*n2;
+  document.myform.result.value=r;
+  
+}
+function div(){
+  n1=document.myform.n1.value;
+  n2=document.myform.n2.value;
+  n1=parseFloat(n1);
+  n2=parseFloat(n2);
+  r=n1/n2;
+  document.myform.result.value=r;
+  
+}
+    </script>
+  </head>
+  <body>
+<form name='myform'>
+number1<input type='text' name='n1' value=' '><br><br>
+number2<input type='text' name='n2' value=' '><br><br>
+<input type='button' value='add' onclick=add() >
+<input type='button' value='sub' onclick=sub() >
+<input type='button' value='mult' onclick=mult() >
+<input type='button' value='div' onclick=div() ><br><br>
+result <input type='text' name='result' value=' '>
+</form>
+  </body>
+</html>
